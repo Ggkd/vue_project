@@ -1,0 +1,12 @@
+<view class="movie">
+  <image class="picture" src="{{movie.images.large}}"></image>
+  <text class="name">{{movie.title}}</text>
+  <view class="movie_detail">
+    <text>导演：{{movie.directors[0].name}}</text>
+    <view class="casts">
+      <text>演员：<text wx:for="{{movie.casts}}">{{item.name}} </text></text>
+    </view>
+    <text>评分：{{movie.rating.average}}</text>
+  </view>
+  <button>立即看片</button>
+</view>

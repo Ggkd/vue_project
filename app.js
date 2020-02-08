@@ -2,6 +2,7 @@
 App({
   data:{
     isMusicPlay:false,
-    pageIndex : null
+    pageIndex : null,
+    movie_data : []
   }
 })

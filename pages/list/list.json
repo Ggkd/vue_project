@@ -1,6 +1,6 @@
 {
   "usingComponents": {},
-    "navigationBarBackgroundColor": "#DAA520",
+    "navigationBarBackgroundColor": "#48D1CC",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "列表页"
+    "navigationBarTitleText": "资讯"
 }

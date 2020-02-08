@@ -1,0 +1,33 @@
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture {
+  height: 700rpx;
+  width: 70%;
+  margin: 30rpx 0;
+}
+
+.name {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.movie_detail {
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+
+button{
+  width: 70%;
+  background-color: 	#2E8B57;
+  color: #fff;
+  margin-top: 10rpx;
+}
+
+.casts {
+  display: flex;
+}

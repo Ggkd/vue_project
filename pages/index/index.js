@@ -54,7 +54,7 @@ Page({
 
   //处理用户是否允许授权
   handleUserAuth(data){
-    console.log(data)
+    // console.log(data)
     if (data.detail.rawData) {
       this.handleUserInfo();
     }
@@ -63,7 +63,7 @@ Page({
 
 // 点击跳转
   handleClick(){
-    wx.redirectTo({
+    wx.switchTab({
       url: "/pages/list/list"
     })
   },

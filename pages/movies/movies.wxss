@@ -1,0 +1,40 @@
+/* miniprogram/pages/movies/movies.wxss */
+.movies{
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1rpx #eee solid;
+}
+
+.movie_pic {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.movie_detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+  width: 70%;
+}
+
+.name {
+  font-size: 32rpx;
+  color: #000;
+}
+
+.year {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.director {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.rating {
+  color: red;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-right: 20rpx;
+}

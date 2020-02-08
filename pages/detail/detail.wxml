@@ -14,10 +14,10 @@
       <image catchtap="collect" wx:if="{{!isCollected}}" src="http://img1.imgtn.bdimg.com/it/u=2634374494,3803292217&fm=26&gp=0.jpg"></image>
       <image catchtap="collect" wx:if="{{isCollected}}" src="http://pic.90sjimg.com/design/00/07/85/23/5933c789d97a9.png"></image>
 
-      <image src="http://img5.imgtn.bdimg.com/it/u=3874646111,2421327622&fm=26&gp=0.jpg"></image>
+      <image catchtap="handleShare" src="http://img5.imgtn.bdimg.com/it/u=3874646111,2421327622&fm=26&gp=0.jpg"></image>
     </view>
     <view class="line"></view>
   </view>
-  <button>转发文章</button>
+  <button open-type="share">转发文章</button>
   <text class="content">{{dataObj.content}}</text>
 </view>

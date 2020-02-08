@@ -1,13 +1,31 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/movies/movies",
     "pages/list/list",
     "pages/detail/detail",
-    "pages/index/index"
+    "pages/movie_detail/movie_detail"
   ],
   "sitemapLocation": "sitemap.json",
   "window": {
     "navigationBarBackgroundColor": "#EEE8AA",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "首页"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "资讯",
+        "iconPath": "/images/news.jpg",
+        "selectedIconPath": "/images/news_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/images/movie.jpg",
+        "selectedIconPath": "/images/movie_hl.jpg"
+      }
+    ]
   }
 }

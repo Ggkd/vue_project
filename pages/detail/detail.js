@@ -71,6 +71,15 @@ Page({
   },
 
 
+  // 点击分享
+  handleShare(){
+    wx.showActionSheet({
+      itemList:["分享到微信", "分享到QQ", "分享到微博"],
+      itemColor: "	#3CB371"
+    })
+  },
+
+
   /**
    * 生命周期函数--监听页面加载
    */
