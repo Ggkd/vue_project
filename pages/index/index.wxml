@@ -1,0 +1,12 @@
+<view class="container">
+  <!-- <image src="/images/IMG_0073.JPG" class="avatar"></image> -->
+  <image src="{{userInfo.avatarUrl}}" class="avatar" style='display:{{isShow?"none": "block"}}'></image>
+  <button bindgetuserinfo="handleUserAuth" open-type="getUserInfo" style='display:{{isShow?"block": "none"}}' class="auth">开启小程序之旅</button>
+  <!-- <text class="name">哈哈哈哈</text> -->
+  <text class="name" style='display:{{isShow?"none": "block"}}'>{{userInfo.nickName}}</text>
+  <!-- <view class="content" catchtap="parent"> -->
+   <view class="content" catchtap="handleClick" style='display:{{isShow?"none": "block"}}'>
+    <text class="title">开启小程序之旅</text>
+     <!-- <text class="title">{{msg}}</text> -->
+  </view>
+</view>

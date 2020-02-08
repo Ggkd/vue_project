@@ -1,0 +1,25 @@
+<!--miniprogram/pages/list/list.wxml-->
+<import src="/pages/list-template/list-template.wxml" />
+<view>
+  <swiper indicator-dots indicator-color="red" indicator-active-color="green" catchtap="swiperToDetail">
+    <swiper-item>
+      <image data-index="0" src="https://img.huxiucdn.com/article/cover/202002/07/074034215421.jpg?imageView2/1/w/1440/h/810/|imageMogr2/strip/interlace/1/quality/85/format/jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index="1" src="https://img.huxiucdn.com/article/cover/202002/06/203927049521.jpg?imageView2/1/w/1440/h/810/|imageMogr2/strip/interlace/1/quality/85/format/jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index="2" src="https://img.huxiucdn.com/article/cover/202002/06/191900660487.jpg?imageView2/1/w/1440/h/810/|imageMogr2/strip/interlace/1/quality/85/format/jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index="3" src="https://img.huxiucdn.com/article/cover/201907/17/183114451522.jpg?imageView2/1/w/1440/h/810/|imageMogr2/strip/interlace/1/quality/85/format/jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{listArr}}" wx:key="{{index}}">
+    <view data-index="{{index}}" catchtap="toDetail">
+      <template is="list-content" data="{{...item}}"/>
+    </view>
+  </block>
+
+</view>

@@ -1,0 +1,17 @@
+<!--miniprogram/pages/list-template/list-template.wxml-->
+
+<template name="list-content">
+<view class="tmpContainer">
+  <view class="image-date">
+  <image src="{{avatar}}"></image>
+  <text>{{date}}</text>
+  </view>
+  <text class="title">{{title}}</text>
+  <image class="picture" src="{{picture}}"></image>
+  <text class="content">{{content}}</text>
+  <view class="up">
+    <image src="http://pic.51yuansu.com/pic2/cover/00/27/90/5801869760dad_610.jpg"></image>
+    <text>{{up_count}}</text>
+  </view>
+</view>
+</template>

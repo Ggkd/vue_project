@@ -1,0 +1,73 @@
+/* miniprogram/pages/detail/detail.wxss */
+.container {
+  display: flex;
+  flex-flow: column;
+}
+
+.headPicture {
+  width: 100%;
+  height: 400rpx;
+}
+
+.date {
+  margin-top: 20rpx;
+}
+
+.date image {
+  width: 45rpx;
+  height: 45rpx;
+  vertical-align: middle;
+}
+
+.date text {
+  padding: 10rpx;
+  font-size: 26rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.col_share_container {
+  position: relative;
+}
+
+.col_share {
+  float: right;
+  margin-right: 80rpx;
+}
+
+.col_share image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.line {
+  width: 90%;
+  height: 2rpx;
+  background-color: #eee;
+  position: absolute;
+  top: 30rpx;
+  left: 5%;
+  z-index: -1;
+}
+
+button {
+    width: 260rpx;
+}
+
+.content {
+  font-size: 30rpx;
+  text-indent: 30rpx;
+  margin-top: 20rpx;
+}
+
+.music {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+}

@@ -1,0 +1,23 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="container">
+  <image class="headPicture" src="{{isMusic?dataObj.music_picture: dataObj.picture}}"></image>
+  <image class="music" catchtap="clickMusic" src='{{isMusic?"http://pic.51yuansu.com/pic2/cover/00/37/50/58120e5cd8ec2_610.jpg": "http://img0.imgtn.bdimg.com/it/u=3376314620,4262374316&fm=26&gp=0.jpg"}}'></image>
+  <view class="date">
+    <image src="{{dataObj.avatar}}"></image>
+    <text>{{dataObj.author}}</text>
+    <text>发布于</text>
+    <text>{{dataObj.date}}</text>
+  </view>
+  <text class="title">{{dataObj.title}}</text>
+  <view class="col_share_container">
+    <view class="col_share">
+      <image catchtap="collect" wx:if="{{!isCollected}}" src="http://img1.imgtn.bdimg.com/it/u=2634374494,3803292217&fm=26&gp=0.jpg"></image>
+      <image catchtap="collect" wx:if="{{isCollected}}" src="http://pic.90sjimg.com/design/00/07/85/23/5933c789d97a9.png"></image>
+
+      <image src="http://img5.imgtn.bdimg.com/it/u=3874646111,2421327622&fm=26&gp=0.jpg"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+  <button>转发文章</button>
+  <text class="content">{{dataObj.content}}</text>
+</view>

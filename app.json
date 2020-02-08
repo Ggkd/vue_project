@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/index/index"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#EEE8AA",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "首页"
+  }
+}
